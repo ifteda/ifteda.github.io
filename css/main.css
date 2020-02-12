@@ -23,9 +23,14 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
 p {
     font-weight: 24px;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .navbar-custom {
@@ -33,12 +38,17 @@ p {
 }
 
 .navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav {
+.navbar-custom .nav-link {
     color: #FFFFFF;
     font-family: "Aguafina Script", cursive;
     font-style: "normal";
     font-weight: normal;
-    font-size: 48px;
+    font-size: 24px;
     align-items: "center";
     text-align: "center";
+}
+
+.navbar-custom .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
 }
