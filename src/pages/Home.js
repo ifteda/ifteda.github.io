@@ -2,11 +2,13 @@ import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import '../style/Home.css';
+import Arrow from "../assets/arrow"
 import Logo from "../assets/logo";
 
 const Home = () => (
   <Container fluid className="home">
-    <Logo className="home-img" />
+    <Logo className="logo" />
+    <Arrow className="arrow"/>
     <Row className="home-links-row">
       <Col className="home-links-col">
         <Link className="home-text" to="/education">Education</Link>

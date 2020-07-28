@@ -12,7 +12,6 @@ import {Projects} from './pages/Projects';
 const App = () => {
   return (
     <BrowserRouter>
-      <MainNav />
       <ScrollToTop />
       <Switch>
         <Route exact path="/" component={Home}/>

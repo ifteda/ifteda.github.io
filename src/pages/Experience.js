@@ -1,9 +1,11 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
+import {MainNav} from '../components/MainNav'
 import '../style/Experience.css';
 
 const Experience = () => (
   <Container fluid className="exp">
+    <MainNav />
 
     <Row className="ed-exp-row">
       <Col className="section-header">

@@ -1,10 +1,12 @@
 import React from 'react';
 import {Col, Container, Row, Table} from 'react-bootstrap';
+import {MainNav} from '../components/MainNav';
 import '../style/Education.css';
 
 const Education = () => {
   return (
     <Container fluid className="ed">
+      <MainNav />
 
       <Row className="ed-exp-row">
         <Col className="section-header">
