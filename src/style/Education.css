@@ -1,0 +1,22 @@
+.ed {
+    max-width: 1400px;
+    margin: 3rem auto;
+}
+
+.ed h2, h4 {
+    display: inline;
+}
+
+.ed ul {
+    list-style: none;
+}
+
+.ed li {
+    display: inline;
+}
+
+@media only screen and (max-width: 640px) {
+    .ed {
+        margin: 0rem;
+    }
+}
