@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import {MainNav} from './components/MainNav';
 import {Footer} from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import {Education} from './pages/Education';
