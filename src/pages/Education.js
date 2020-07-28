@@ -1,10 +1,8 @@
-import React, {useState} from 'react';
-import {Button, Col, Collapse, Container, Row, Table} from 'react-bootstrap';
+import React from 'react';
+import {Col, Container, Row, Table} from 'react-bootstrap';
 import '../style/Education.css';
 
 const Education = () => {
-  // const [open, setOpen] = useState(false);
-
   return (
     <Container fluid className="ed">
 
@@ -25,65 +23,57 @@ const Education = () => {
           <p>Computational Social Science</p>
           <h5>Honors</h5>
           <p>Dean's List (Fall 2017 - Present)</p>
-          {/* TODO button to expand/collapse div of coursework */}
-          {/*<Button onClick={() => setOpen(!open)} aria-controls="nu-coursework" aria-expanded={open}>*/}
-          {/*  Coursework*/}
-          {/*</Button>*/}
-          {/*<Collapse in={open}>*/}
-          {/*  <div id="nu-coursework">*/}
-              <Table>
-                <tr>
-                  <th>Computer Science:</th>
-                  <td>
-                    <ul>
-                      <li>CS 1200,{' '}</li>
-                      <li>CS 1210,{' '}</li>
-                      <li>CS 1800,{' '}</li>
-                      <li>CS 2500,{' '}</li>
-                      <li>CS 2510,{' '}</li>
-                      <li>CS 3000,{' '}</li>
-                      <li>CS 3200,{' '}</li>
-                      <li>CS 3500,{' '}</li>
-                      <li>CS 4500,{' '}</li>
-                      <li>DS 3000,{' '}</li>
-                      <li>DS 4300,{' '}</li>
-                      <li>IS 2000</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Business:</th>
-                  <td>
-                    <ul>
-                      <li>ACCT 1201,{' '}</li>
-                      <li>ACCT 2301,{' '}</li>
-                      <li>ECON 1115,{' '}</li>
-                      <li>ECON 1116,{' '}</li>
-                      <li>FINA 2201,{' '}</li>
-                      <li>FINA 3303,{' '}</li>
-                      <li>FINA 4380,{' '}</li>
-                      <li>FINA 4420,{' '}</li>
-                      <li>MGSC 2301,{' '}</li>
-                      <li>MISM 2301,{' '}</li>
-                      <li>MKTG 2201</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Other:</th>
-                  <td>
-                    <ul>
-                      <li>COMM 1225,{' '}</li>
-                      <li>ENGW 3302,{' '}</li>
-                      <li>MUSC 1134,{' '}</li>
-                      <li>PHIL 1145,{' '}</li>
-                      <li>WMNS 1103</li>
-                    </ul>
-                  </td>
-                </tr>
-              </Table>
-          {/*  </div>*/}
-          {/*</Collapse>*/}
+          <Table>
+            <tr>
+              <th>Computer Science:</th>
+              <td>
+                <ul>
+                  <li>CS 1200,{' '}</li>
+                  <li>CS 1210,{' '}</li>
+                  <li>CS 1800,{' '}</li>
+                  <li>CS 2500,{' '}</li>
+                  <li>CS 2510,{' '}</li>
+                  <li>CS 3000,{' '}</li>
+                  <li>CS 3200,{' '}</li>
+                  <li>CS 3500,{' '}</li>
+                  <li>CS 4500,{' '}</li>
+                  <li>DS 3000,{' '}</li>
+                  <li>DS 4300,{' '}</li>
+                  <li>IS 2000</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Business:</th>
+              <td>
+                <ul>
+                  <li>ACCT 1201,{' '}</li>
+                  <li>ACCT 2301,{' '}</li>
+                  <li>ECON 1115,{' '}</li>
+                  <li>ECON 1116,{' '}</li>
+                  <li>FINA 2201,{' '}</li>
+                  <li>FINA 3303,{' '}</li>
+                  <li>FINA 4380,{' '}</li>
+                  <li>FINA 4420,{' '}</li>
+                  <li>MGSC 2301,{' '}</li>
+                  <li>MISM 2301,{' '}</li>
+                  <li>MKTG 2201</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Other:</th>
+              <td>
+                <ul>
+                  <li>COMM 1225,{' '}</li>
+                  <li>ENGW 3302,{' '}</li>
+                  <li>MUSC 1134,{' '}</li>
+                  <li>PHIL 1145,{' '}</li>
+                  <li>WMNS 1103</li>
+                </ul>
+              </td>
+            </tr>
+          </Table>
         </Col>
       </Row>
 
@@ -107,6 +97,7 @@ const Education = () => {
           </div>
         </Col>
       </Row>
+
     </Container>
   );
 };

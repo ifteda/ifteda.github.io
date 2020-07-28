@@ -28,10 +28,10 @@ COLORS
   border-width: 0.5rem;
   border-image-slice: 1;
   border-image-source: linear-gradient(
-          0deg,
-          var(--main-green),
-          var(--main-blue),
-          var(--main-purple))
+    0deg,
+    var(--main-green),
+    var(--main-blue),
+    var(--main-purple))
 }
 
 /*---
@@ -39,44 +39,36 @@ FONTS
 ---*/
 
 /* Cormorant Garamond */
-
 @font-face {
   font-family: CormorantGaramond;
   src: url('style/fonts/CormorantGaramond-Regular.ttf');
 }
-
 @font-face {
   font-family: CormorantGaramondBold;
   src: url('style/fonts/CormorantGaramond-Bold.ttf');
 }
-
 @font-face {
   font-family: CormorantGaramondBoldItalic;
   src: url('style/fonts/CormorantGaramond-BoldItalic.ttf');
 }
-
 @font-face {
   font-family: CormorantGaramondItalic;
   src: url('style/fonts/CormorantGaramond-Italic.ttf');
 }
 
 /* Open Sans */
-
 @font-face {
   font-family: OpenSans;
   src: url('style/fonts/OpenSans-Regular.ttf');
 }
-
 @font-face {
   font-family: OpenSansBold;
   src: url('style/fonts/OpenSans-Bold.ttf');
 }
-
 @font-face {
   font-family: OpenSansBoldItalic;
   src: url('style/fonts/OpenSans-BoldItalic.ttf');
 }
-
 @font-face {
   font-family: OpenSansItalic;
   src: url('style/fonts/OpenSans-Italic.ttf');
@@ -86,12 +78,22 @@ FONTS
 STYLE
 ---*/
 
+a {
+  color: var(--cool-grey);
+  font-family: OpenSansBold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dark-blue);
+}
+
 body {
   background: linear-gradient(
-          0deg,
-          var(--main-green),
-          var(--main-blue),
-          var(--main-purple));
+    0deg,
+    var(--main-green),
+    var(--main-blue),
+    var(--main-purple));
   font-family: OpenSans, OpenSansBold, OpenSansBoldItalic, OpenSansItalic;
   color: var(--cool-black);
   padding-top: 80px;
@@ -131,23 +133,6 @@ h5 {
   margin-bottom: -15px;
 }
 
-p,
-span {
-  color: var(--cool-black);
-  font-family: OpenSans;
-  font-size: 16px;
-}
-
-a {
-  color: var(--cool-grey);
-  font-family: OpenSansBold;
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--dark-blue);
-}
-
 hr {
   background-color: var(--dark-blue);
   height: 3px;
@@ -157,20 +142,23 @@ hr {
   margin: 3rem 0;
 }
 
-ul {
-  list-style: square;
+p,
+span {
+  color: var(--cool-black);
+  font-family: OpenSans;
+  font-size: 16px;
 }
 
-th {
-  text-align: right;
+ul {
+  list-style: square;
 }
 
 td {
   text-align: left;
 }
 
-.ed-exp-row {
-  margin-bottom: 60px;
+th {
+  text-align: right;
 }
 
 .ed-exp-col {
@@ -179,6 +167,9 @@ td {
   padding: 10px 10px;
 }
 
+.ed-exp-row {
+  margin-bottom: 60px;
+}
 
 .section-header {
   margin: auto 10rem;
