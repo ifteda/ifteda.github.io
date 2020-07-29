@@ -1,0 +1,14 @@
+.exp {
+  max-width: 1400px;
+  margin: 3rem auto;
+}
+
+.exp h2, h4 {
+  display: inline;
+}
+
+@media only screen and (max-width: 640px) {
+  .exp {
+    margin: 0rem;
+  }
+}

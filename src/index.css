@@ -1,0 +1,203 @@
+/*----
+COLORS
+----*/
+
+:root {
+  /* theme colors */
+  --main-purple: #b3b3ff;
+  --main-blue: #b3e5ff;
+  --main-green: #b3ffe5;
+  /* other colors */
+  --dark-blue: #000052;
+  --cool-white: #ebf8ff;
+  --cool-grey: #61616B;
+  --cool-black: #000014;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    0deg,
+    var(--main-green),
+    var(--main-blue),
+    var(--main-purple))
+}
+
+.gradient-border {
+  border: 10px;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    0deg,
+    var(--main-green),
+    var(--main-blue),
+    var(--main-purple))
+}
+
+/*---
+FONTS
+---*/
+
+/* Cormorant Garamond */
+@font-face {
+  font-family: CormorantGaramond;
+  src: url('style/fonts/CormorantGaramond-Regular.ttf');
+}
+@font-face {
+  font-family: CormorantGaramondBold;
+  src: url('style/fonts/CormorantGaramond-Bold.ttf');
+}
+@font-face {
+  font-family: CormorantGaramondBoldItalic;
+  src: url('style/fonts/CormorantGaramond-BoldItalic.ttf');
+}
+@font-face {
+  font-family: CormorantGaramondItalic;
+  src: url('style/fonts/CormorantGaramond-Italic.ttf');
+}
+
+/* Open Sans */
+@font-face {
+  font-family: OpenSans;
+  src: url('style/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url('style/fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: OpenSansBoldItalic;
+  src: url('style/fonts/OpenSans-BoldItalic.ttf');
+}
+@font-face {
+  font-family: OpenSansItalic;
+  src: url('style/fonts/OpenSans-Italic.ttf');
+}
+
+/*---
+STYLE
+---*/
+
+a {
+  color: var(--cool-grey);
+  font-family: OpenSansBold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dark-blue);
+}
+
+body {
+  background: linear-gradient(
+    0deg,
+    var(--main-green),
+    var(--main-blue),
+    var(--main-purple));
+  font-family: OpenSans, OpenSansBold, OpenSansBoldItalic, OpenSansItalic;
+  color: var(--cool-black);
+  padding-top: 80px;
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--dark-blue);
+  font-family: CormorantGaramondBoldItalic;
+}
+
+h2 {
+  font-size: 36px;
+  color: var(--dark-blue);
+  font-family: CormorantGaramondBold;
+  margin-bottom: -10px;
+}
+
+h3 {
+  font-size: 20px;
+  color: var(--cool-black);
+  font-family: CormorantGaramondItalic;
+  margin-bottom: -10px;
+}
+
+h4 {
+  font-size: 16px;
+  color: var(--cool-black);
+  font-family: CormorantGaramond;
+  margin-bottom: -15px;
+}
+
+h5 {
+  font-size: 16px;
+  color: var(--cool-black);
+  font-family: OpenSans;
+  margin-bottom: -15px;
+}
+
+hr {
+  background-color: var(--dark-blue);
+  height: 3px;
+  border: 0;
+  clear: both;
+  display: block;
+  margin: 3rem 0;
+}
+
+p,
+span {
+  color: var(--cool-black);
+  font-family: OpenSans;
+  font-size: 16px;
+}
+
+ul {
+  list-style: square;
+}
+
+td {
+  text-align: left;
+}
+
+th {
+  text-align: right;
+}
+
+.ed-exp-col {
+  background: var(--cool-white);
+  margin: auto 10rem;
+  padding: 10px 10px;
+}
+
+.ed-exp-row {
+  margin-bottom: 60px;
+}
+
+.section-header {
+  margin: auto 10rem;
+  padding: 10px 10px;
+}
+
+.section-header h1, hr {
+  margin-bottom: 0px;
+}
+
+.section-header hr {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 1008px) {
+  .ed-exp-col, .section-header {
+    margin: auto 5rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .ed-exp-col, .section-header {
+    margin: auto 2rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .ed-exp-col, .section-header {
+    margin: auto 0rem;
+  }
+}
