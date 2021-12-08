@@ -1,0 +1,42 @@
+.home {
+    text-align: center;
+
+    background: linear-gradient(180deg, #3B454F 0%, #000A14 90%);
+}
+
+img {
+    padding: 2% 0;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+}
+
+.greeting {
+    font-family: Cormorant Infant;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vw;
+
+    color: #EBF5FF;
+}
+
+.name {
+    font-family: Pinyon Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10vw;
+    white-space: pre;
+
+    color: #EBF5FF;
+    
+    text-shadow: 0px 0px 20px #EBF5FF;
+}
+
+@media only screen and (max-height: 800px) {
+    img {
+        max-height: 800px;
+    }
+}
