@@ -1,7 +1,7 @@
-import axios from 'axios';
 import { React, useEffect, useState } from 'react';
 import { Carousel, Image, Modal } from 'react-bootstrap';
 import { ContentPage } from './ContentPage';
+import base from '../api/base';
 
 const Experience = () => {
 
@@ -28,16 +28,12 @@ const Experience = () => {
     };
 
     useEffect(() => {
-        const options = {
-            method: 'GET',
-            url: 'http://localhost:8000/experience'
-        }
-
-        axios.request(options).then((response) => {
-            setItems(response.data.records)
-        }). catch((error) => {
-            console.error(error)
-        })
+        base("experience")
+            .select({ view: "Grid view" })
+            .eachPage((records, fetchNextPage) => {
+                setItems(records);
+                fetchNextPage();
+            })
     }, [])
 
     return (

@@ -302,5 +302,5 @@ $RECYCLE.BIN/
 /build
 
 # sensitive
-backend.js
+src/api
 src/App.js

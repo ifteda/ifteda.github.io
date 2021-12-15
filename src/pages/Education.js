@@ -1,7 +1,7 @@
-import axios from 'axios';
 import { React, useEffect, useState } from 'react';
 import { Carousel, Image, Modal } from 'react-bootstrap';
 import { ContentPage } from './ContentPage';
+import base from '../api/base';
 
 const Education = () => {
 
@@ -28,16 +28,12 @@ const Education = () => {
     };
 
     useEffect(() => {
-        const options = {
-            method: 'GET',
-            url: 'http://localhost:8000/education'
-        }
-
-        axios.request(options).then((response) => {
-            setItems(response.data.records)
-        }). catch((error) => {
-            console.error(error)
-        })
+        base("education")
+            .select({ view: "Grid view" })
+            .eachPage((records, fetchNextPage) => {
+                setItems(records);
+                fetchNextPage();
+            })
     }, [])
 
     return (
