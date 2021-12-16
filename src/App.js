@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { Home, Education, Experience, Projects } from './pages';
 import './App.css';
@@ -13,14 +13,14 @@ function App() {
   }, [])
 
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="education" element={<Education />} />
         <Route path="experience" element={<Experience />} />
         <Route path="projects" element={<Projects />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
