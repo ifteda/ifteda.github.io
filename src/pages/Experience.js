@@ -56,7 +56,7 @@ const Experience = () => {
                                 </Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                {itemInfo.detailsTemp}
+                                <div dangerouslySetInnerHTML={{ __html: itemInfo.detailsHTML}} />
                             </Modal.Body>
                         </Modal>
                     </Carousel.Item>
