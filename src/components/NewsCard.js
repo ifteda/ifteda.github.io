@@ -11,6 +11,7 @@ const NewsCard = ({ item }) => {
                     <Card.Title>{item.heading}</Card.Title>
                     <Card.Text>
                         {item.subheading}
+                        <p className="source">{item.dateFormatted}</p>
                         <p className="source"><i>{item.source}</i></p>
                     </Card.Text>
                 </Card.ImgOverlay>
