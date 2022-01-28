@@ -12,6 +12,10 @@ img {
     position: absolute;
     top: 50%;
     left: 26%;
+
+    background: radial-gradient(
+        #1E2832,
+        transparent);
 }
 
 .greeting {

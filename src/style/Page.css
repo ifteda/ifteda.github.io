@@ -26,18 +26,26 @@ a:hover {
 .carousel-caption {
     background: linear-gradient(
         90deg, 
-        rgba(0, 0, 0, 0), 
+        transparent, 
         #000A14, 
-        rgba(0, 0, 0, 0));
-}
-
-.carousel-caption:hover {
-    text-shadow: 0px 0px 30px #EBF5FF;
+        transparent);
+    
+    transition: text-shadow .5s;
 }
 
 .carousel-img {
     border-radius: 100px;
     max-height: 80vh;
+
+    transition: transform .5s;
+}
+
+.carousel-img:hover {
+    transform: scale(1.1);
+}
+
+.carousel-img:hover + .carousel-caption {
+    text-shadow: 0px 0px 30px #EBF5FF;
 }
 
 .modal {

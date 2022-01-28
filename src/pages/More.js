@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react';
-import { Col, Image, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { ContentPage } from './ContentPage';
 import NewsCard from '../components/NewsCard';
 import base from '../api/base';
