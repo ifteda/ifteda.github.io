@@ -18,8 +18,9 @@
 }
 
 .col-logo {
-    display: flex;
+    display: block;
     justify-content: right;
+    text-align: end;
     margin-right: 1rem;
 }
 
