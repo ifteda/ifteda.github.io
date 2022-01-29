@@ -19,16 +19,16 @@
 .card-img-overlay {
     background: linear-gradient(
         0deg,
-        transparent,
+        transparent 20%,
         #000A14 80%);
-    opacity: 98%;
+    opacity: .95;
     transition: opacity .2s;
         
     text-align: center;
 }
 
 .card-img-overlay:hover {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .card-title, .card-text {
