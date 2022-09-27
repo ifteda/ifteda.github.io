@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <Image className="logo" src={logo} />
+            <Image fluid className="logo" src={logo} />
         </div>
     );
 };
