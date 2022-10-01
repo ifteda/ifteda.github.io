@@ -52,12 +52,19 @@ a:hover {
     color: #000A14;
 }
 
-.modal-header{
-    background: linear-gradient(90deg, #EBF5FF 20%, #1E2832 100%);
+.modal-header {
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+
+    filter: grayscale(50%);
+    box-shadow: inset 0 0 8rem 1rem black;
 }
 
 .modal-title {
+    width: 100%;
     font-family: Cormorant Infant;
+    background: linear-gradient(90deg, transparent, #EBF5FF, #EBF5FF, transparent);
 }
 
 .modal-body {
