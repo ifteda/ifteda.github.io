@@ -6,7 +6,7 @@ const NewsCard = ({ item }) => {
     return (
         <a href={item.link} target="_blank" rel="noopener noreferrer">
             <Card>
-                <Card.Img src={item.img[0].url} />
+                <Card.Img src={item.imgURL} />
                 <Card.ImgOverlay>
                     <Card.Title>{item.heading}</Card.Title>
                     <Card.Text>

@@ -32,7 +32,7 @@ const Experience = () => {
                     <Carousel.Item key={item.id} style={{ textAlign: 'center' }}>
                         <a onClick={() => handleClick(item.fields)}>
                             <>
-                                <Image fluid className="carousel-img" src={item.fields.img[0].url} />
+                                <Image fluid className="carousel-img" src={item.fields.imgURL} />
                                 <Carousel.Caption>
                                     <h3>{item.fields.heading}</h3>
                                     <p>{item.fields.subheading}</p>

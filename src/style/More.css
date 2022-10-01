@@ -2,6 +2,8 @@
     margin: 2.5vw;
     border-color: #1E2832 !important;
     transition: transform .5s, box-shadow .5s, filter .5s;
+
+    filter: grayscale(50%);
 }
 
 .card:hover {
@@ -9,6 +11,8 @@
     box-shadow: 0px 0px 2.5px 2.5px #B1BBC5;
 
     transform: scale(1.1);
+
+    filter: none;
 }
 
 .card-img {
@@ -20,17 +24,9 @@
         0deg,
         transparent 20%,
         #000A14 80%);
-    opacity: .95;
     transition: padding .2s, opacity .5s, background-color .5s;
     
     text-align: center;
-}
-
-.card-img-overlay:hover {
-    padding: 12vh 0;
-    opacity: 1;
-
-    background-color: #000A14;
 }
 
 .card-title, .card-text {
