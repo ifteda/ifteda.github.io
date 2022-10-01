@@ -22,12 +22,12 @@
         #000A14 80%);
     opacity: .95;
     transition: padding .2s, opacity .5s, background-color .5s;
-        
+    
     text-align: center;
 }
 
 .card-img-overlay:hover {
-    padding: 40% 0;
+    padding: 12vh 0;
     opacity: 1;
 
     background-color: #000A14;
