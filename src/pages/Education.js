@@ -5,6 +5,8 @@ import base from '../api/base';
 
 const Education = () => {
 
+    const [pageTitle, setPageTitle] = useState();
+
     const [items, setItems] = useState([])
 
     const [modalShow, setModalShow] = useState(false);
@@ -12,9 +14,15 @@ const Education = () => {
     const [itemInfo, setItemInfo] = useState({});
 
     const handleClick = (itemInfo) => {
+        setPageTitle(itemInfo.pageTitle);
         setModalShow(true);
         setItemInfo(itemInfo);
     };
+
+    useEffect(() => {
+        if (!modalShow) { setPageTitle("Education") };
+        document.title = pageTitle;
+    })
 
     useEffect(() => {
         base("education")

@@ -6,6 +6,8 @@ import base from '../api/base';
 
 const More = () => {
 
+    document.title = "More";
+
     const [items, setItems] = useState([])
 
     useEffect(() => {

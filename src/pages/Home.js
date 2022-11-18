@@ -6,6 +6,9 @@ import base from '../api/base';
 import '../style/Home.css';
 
 const Home = () => {
+
+    document.title = "Ifteda";
+
     const [greetings, setGreetings] = useState([])
 
     useEffect(() => {

@@ -5,6 +5,8 @@ import base from '../api/base';
 
 const Experience = () => {
 
+    const [pageTitle, setPageTitle] = useState();
+
     const [items, setItems] = useState([])
 
     const [modalShow, setModalShow] = useState(false);
@@ -12,9 +14,15 @@ const Experience = () => {
     const [itemInfo, setItemInfo] = useState({});
 
     const handleClick = (itemInfo) => {
+        setPageTitle(itemInfo.pageTitle);
         setModalShow(true);
         setItemInfo(itemInfo);
     };
+
+    useEffect(() => {
+        if (!modalShow) { setPageTitle("Experience") };
+        document.title = pageTitle;
+    })
 
     useEffect(() => {
         base("experience")
