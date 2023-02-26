@@ -1,5 +1,5 @@
 html {
-    background: #1E2832;
+    background: var(--dark-grey);
 }
 
 .page {    
@@ -7,10 +7,10 @@ html {
     font-style: normal;
     font-weight: 600;
 
-    text-shadow: 0px 0px 20px #000A14;
+    text-shadow: 0px 0px 20px var(--black);
 
-    background: #000A14;
-    color: #EBF5FF;
+    background: var(--black);
+    color: var(--white);
 }
 
 .page p {
@@ -27,7 +27,7 @@ a:hover {
     background: linear-gradient(
         90deg, 
         transparent, 
-        #000A14, 
+        var(--black), 
         transparent);
     
     transition: text-shadow .5s;
@@ -45,11 +45,11 @@ a:hover {
 }
 
 .carousel-img:hover + .carousel-caption {
-    text-shadow: 0px 0px 30px #EBF5FF;
+    text-shadow: 0px 0px 30px var(--white);
 }
 
 .modal {
-    color: #000A14;
+    color: var(--black);
 }
 
 .modal-header {
@@ -64,14 +64,14 @@ a:hover {
 .modal-title {
     width: 100%;
     font-family: Cormorant Infant;
-    background: linear-gradient(90deg, transparent, #EBF5FF, #EBF5FF, transparent);
+    background: linear-gradient(90deg, transparent, var(--white), var(--white), transparent);
 }
 
 .modal-body {
     font-family: Quicksand;
     font-size: 18px;
 
-    background: #EBF5FF;
+    background: var(--white);
 }
 
 @media only screen and (max-width: 991px) {

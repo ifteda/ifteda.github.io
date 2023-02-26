@@ -1,3 +1,11 @@
+:root {
+    --black: #000A14;
+    --dark-grey: #36404A;
+    --grey: #76808A;
+    --light-grey: #B5BFC9;
+    --white: #EBF5FF;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&family=Pinyon+Script&family=Quicksand:wght@400;700&display=swap');
 
 @font-face {
