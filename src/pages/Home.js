@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(() => {
         base("greeting")
-            .select({ view: "Grid view" })
+            .select({ view: "active" })
             .eachPage((records, fetchNextPage) => {
                 setGreetings(records);
                 fetchNextPage();

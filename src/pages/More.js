@@ -12,7 +12,7 @@ const More = () => {
 
     useEffect(() => {
         base("news")
-            .select({ view: "Grid view" })
+            .select({ view: "active" })
             .eachPage((records, fetchNextPage) => {
                 setItems(records);
                 fetchNextPage();

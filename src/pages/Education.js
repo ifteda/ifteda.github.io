@@ -26,7 +26,7 @@ const Education = () => {
 
     useEffect(() => {
         base("education")
-            .select({ view: "Grid view" })
+            .select({ view: "active" })
             .eachPage((records, fetchNextPage) => {
                 setItems(records);
                 fetchNextPage();

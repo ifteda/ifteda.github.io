@@ -26,7 +26,7 @@ const Experience = () => {
 
     useEffect(() => {
         base("experience")
-            .select({ view: "Grid view" })
+            .select({ view: "active" })
             .eachPage((records, fetchNextPage) => {
                 setItems(records);
                 fetchNextPage();
