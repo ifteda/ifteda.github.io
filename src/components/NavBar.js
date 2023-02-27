@@ -17,6 +17,7 @@ const NavBar = () => {
                     <NavLink className="main-nav" to="/education">Education</NavLink>
                     <NavLink className="main-nav" to="/experience">Experience</NavLink>
                     <NavLink className="main-nav" to="/projects">Projects</NavLink>
+                    <NavLink className="main-nav" to="/skills">Skills</NavLink>
                     <NavLink className="main-nav" to="/more">More</NavLink>
                 </Nav>
             </Navbar.Collapse>

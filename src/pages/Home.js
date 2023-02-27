@@ -25,7 +25,7 @@ const Home = () => {
             <NavBar />
             <div class="text-container">
                 <div className="greeting-container">
-                    {greetings.filter(greeting => greeting.fields.hide == null || greeting.fields.hide == false).map(greeting =>
+                    {greetings.map(greeting =>
                         <span className="greeting">{greeting.fields.greeting}</span>
                     )}
                 </div>

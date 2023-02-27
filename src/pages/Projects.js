@@ -36,7 +36,7 @@ const Projects = () => {
     return (
         <ContentPage>
             <Carousel fade>
-                {items.filter(item => item.fields.hide == null || item.fields.hide == false).map(item => (
+                {items.map(item => (
                     <Carousel.Item key={item.id} style={{ textAlign: 'center' }}>
                         <a onClick={() => handleClick(item.fields)}>
                             <>

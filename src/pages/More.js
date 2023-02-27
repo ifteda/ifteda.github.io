@@ -23,7 +23,7 @@ const More = () => {
         <ContentPage>
             <Container fluid>
                 <Row className="d-flex justify-content-left">
-                    {items.filter(item => item.fields.hide == null || item.fields.hide == false).map(item =>
+                    {items.map(item =>
                     <Col key={item.id} lg={4} md={6} sm={12}>
                         <NewsCard item={item.fields} />
                     </Col>

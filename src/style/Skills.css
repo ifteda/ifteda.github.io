@@ -1,0 +1,60 @@
+.skills {
+    font-family: Cormorant Infant;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.skills button {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+}
+
+.skills button:hover {
+    background-color: var(--grey);
+}
+
+.skills table {
+    color: var(--white);
+    border-color: var(--grey)
+}
+
+.skills thead {
+    font-size: 1.2rem;
+}
+
+.skills tbody {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.skills-col {
+    margin: 1rem 0rem;
+}
+
+.search-row {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.rating-active {
+    color: var(--white);
+    margin: 0rem .1rem;
+}
+
+.rating-active:hover {
+    color: var(--light-grey);
+}
+
+.rating-inactive {
+    color: var(--dark-grey);
+    margin: 0rem .1rem;
+}
+
+.rating-inactive:hover {
+    color: var(--grey);
+}
