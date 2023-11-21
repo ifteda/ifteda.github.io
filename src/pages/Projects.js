@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Carousel, Image, Modal } from 'react-bootstrap';
 import { ContentPage } from './ContentPage';
 import base from '../api/base';

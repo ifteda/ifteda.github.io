@@ -12,7 +12,7 @@ const Footer = () => {
             <Container fluid>
                 <Row>
                     <Col className="col-logo">
-                        <img className="footer-logo" src={logo} />
+                        <img className="footer-logo" src={logo} alt="ifteda" />
                     </Col>
                     <Col className="col-contact">
                         <div>Ifteda Ahmed-Syed</div>

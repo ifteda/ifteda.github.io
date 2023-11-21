@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home, Education, Experience, Projects, Skills, More } from './pages';
 import useGATracker from './useGATracker';

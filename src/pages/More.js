@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { ContentPage } from './ContentPage';
 import NewsCard from '../components/NewsCard';

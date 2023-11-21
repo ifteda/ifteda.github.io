@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, Form, Row, Table } from 'react-bootstrap';
 import { FaSun } from 'react-icons/fa';
 import { ContentPage } from './ContentPage';

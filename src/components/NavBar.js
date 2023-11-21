@@ -9,7 +9,7 @@ const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" variant="dark">
             <Navbar.Brand href="https://ifteda.com/">
-                <img className="nav-wordmark" src={wordmark} />
+                <img className="nav-wordmark" src={wordmark} alt="ifteda" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
