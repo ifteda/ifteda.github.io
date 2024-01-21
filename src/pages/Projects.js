@@ -22,7 +22,7 @@ const Projects = () => {
     useEffect(() => {
         if (!modalShow) { setPageTitle("Projects") };
         document.title = pageTitle;
-    })
+    }, [modalShow, pageTitle])
 
     useEffect(() => {
         base("projects")
@@ -38,7 +38,7 @@ const Projects = () => {
             <Carousel fade>
                 {items.map(item => (
                     <Carousel.Item key={item.id} style={{ textAlign: 'center' }}>
-                        <a onClick={() => handleClick(item.fields)}>
+                        <button onClick={() => handleClick(item.fields)}>
                             <>
                                 <Image fluid className="carousel-img" src={item.fields.imgURL} />
                                 <Carousel.Caption>
@@ -46,7 +46,7 @@ const Projects = () => {
                                     <p>{item.fields.subheading}</p>
                                 </Carousel.Caption>
                             </>
-                        </a>
+                        </button>
                         <Modal
                             show={modalShow}
                             onHide={() => setModalShow(false)}
