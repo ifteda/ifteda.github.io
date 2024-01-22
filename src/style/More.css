@@ -1,9 +1,13 @@
 .card {
-    margin: 2.5vw;
+    margin: 2.4vw;
+    background-color: var(--white) !important;
     border-color: var(--dark-grey) !important;
+    color: var(--white);
     transition: all .5s;
 
     filter: grayscale(50%);
+
+    text-align: center;
 }
 
 .card:hover {
@@ -16,22 +20,23 @@
 }
 
 .card-img {
-    padding: 0;
+    border-radius: 2% 2% 0 0 !important;
 }
 
 .card-img-overlay {
     background-image: linear-gradient(
         0deg,
         transparent 20%,
-        var(--black) 80%);
-    
-    text-align: center;
+        var(--black) 90%);
 }
 
-.card-title, .card-text {
-    color: var(--white);
+.card-footer {
+    background-color: var(--black) !important;
+    color: var(--light-grey) !important;
 }
 
-.source {
-    margin-top: 10px;
+@media only screen and (max-width: 991px) {
+    .card {
+        margin: 4vw;
+    }
 }
