@@ -7,6 +7,15 @@
 
 .nav-wordmark {
     max-height: 80px;
+    margin-left: 20%;
+}
+
+.navbar-collapse {
+    margin-right: 2vw;
+}
+
+.navbar button {
+    margin-right: 5%;
 }
 
 .main-nav {
