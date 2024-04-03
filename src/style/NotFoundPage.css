@@ -1,0 +1,24 @@
+.not-found {
+    font-family: Cormorant Infant;
+    font-style: normal;
+    font-weight: 600;
+
+    text-align: center;
+    height: 100vh;
+    padding-top: 10%;
+
+    background: var(--black);
+    color: var(--white);
+}
+
+.not-found a {
+    color: var(--light-grey);
+}
+
+.not-found a:hover {
+    color: var(--white);
+}
+
+.not-found-logo {
+    max-height: 150px;
+}
