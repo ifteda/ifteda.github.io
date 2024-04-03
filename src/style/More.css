@@ -19,6 +19,26 @@
     filter: none;
 }
 
+.card:hover .card-img-overlay {
+    background-image: linear-gradient(
+        0deg,
+        transparent 40%,
+        var(--black) 90%);
+    
+}
+
+.card:hover .card-footer {
+    color: var(--white) !important;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-header {
+    background-color: var(--black) !important;
+}
+
 .card-img {
     border-radius: 2% 2% 0 0 !important;
 }
