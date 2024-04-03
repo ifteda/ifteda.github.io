@@ -29,6 +29,8 @@ a:hover {
 }
 
 .carousel-caption {
+    transform: translateY(18%);
+
     background: linear-gradient(
         90deg, 
         transparent, 
@@ -36,6 +38,17 @@ a:hover {
         transparent);
     
     transition: text-shadow .5s;
+}
+
+.carousel-indicators {
+    transform: translateY(20%);
+}
+
+.carousel-indicators button {
+    background-color: var(--light-grey) !important;
+    height: 8px !important;
+    width: 8px !important;
+    border-radius: 50% !important;
 }
 
 .carousel-img {
