@@ -20,6 +20,15 @@
     border-width: 0;
 }
 
+.spinner-row {
+    justify-content: center;
+    padding: 2rem 0 2rem;
+}
+
+.spinner-border {
+    color: var(--light-grey);
+}
+
 a:hover {
     cursor: pointer;
 }
