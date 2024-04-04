@@ -7,7 +7,7 @@ const NotFoundPage = () => {
     document.title = "Page Not Found";
 
     return (
-        <Container className="not-found" fluid>
+        <Container fluid className="not-found">
             <Row>
                 <Col>
                     <img className="not-found-logo" src={logo} alt="ifteda" />
@@ -19,7 +19,7 @@ const NotFoundPage = () => {
                         <h1>Oops!</h1>
                         The page you requested does not exist.
                         <br />
-                        <strong><a href="/">Let's head home.</a></strong>
+                        <strong><a href="/">❮ Let's head home. ❯</a></strong>
                     </p>
                 </Col>
             </Row>

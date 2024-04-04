@@ -7,7 +7,7 @@ import '../style/Footer.css';
 
 const Footer = () => {
     return (
-        <Container className="footer" fluid>
+        <Container fluid className="footer">
             <Row>
                 <Col className="contact">
                     <div>

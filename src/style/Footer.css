@@ -1,6 +1,7 @@
 .footer {
     width: 100%;
-    padding: 2rem 0 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     
     font-family: Cormorant Infant;
     font-style: normal;

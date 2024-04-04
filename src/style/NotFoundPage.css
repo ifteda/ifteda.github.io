@@ -8,20 +8,31 @@
     padding-top: 10%;
 
     background: var(--black);
-    color: var(--white);
+    color: var(--light-grey);
+}
+
+.not-found p {
+    font-size: 4vh;
+}
+
+.not-found h1 {
+    font-size: 8vh;
 }
 
 .not-found a {
-    color: var(--light-grey);
+    text-decoration: none;
+    
+    color: var(--white);
 
     transition: all .5s;
 }
 
 .not-found a:hover {
+    font-size: 4.5vh;
     color: var(--white);
     text-shadow: 0px 0px 10px var(--light-grey);
 }
 
 .not-found-logo {
-    max-height: 150px;
+    max-height: 25vh;
 }
