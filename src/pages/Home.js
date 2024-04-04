@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <div className="home">
             <NavBar />
-            <div class="text-container">
+            <div className="text-container">
                 <div className="greeting-container">
                     {greetings.map(greeting =>
                         <span className="greeting">{greeting.fields.greeting}</span>
