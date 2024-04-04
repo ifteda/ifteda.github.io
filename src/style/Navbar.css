@@ -20,7 +20,7 @@
 
 .main-nav {
     margin: 0 1rem;
-    transition: text-shadow .2s;
+    transition: all .5s;
 
     font-family: Cormorant Infant;
     font-style: normal;
@@ -32,10 +32,10 @@
 }
 
 .main-nav:hover {
-    text-shadow: 0px 0px 20px var(--light-grey);
+    filter: drop-shadow(0px 0px 10px var(--light-grey));
 }
 
 .main-nav.active {
-    text-shadow: 0px 0px 20px var(--light-grey);
+    filter: drop-shadow(0px 0px 10px var(--light-grey));
     font-style: italic;
 }

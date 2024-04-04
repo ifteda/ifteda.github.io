@@ -1,45 +1,27 @@
 .footer {
-    position: absolute;
     width: 100%;
-    padding: 1rem 0;
+    padding: 2rem 0 1rem;
     
     font-family: Cormorant Infant;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
+    text-align: center;
 
-    background: linear-gradient(180deg, var(--black) 0%, var(--dark-grey) 100%);
     color: var(--light-grey);
 }
 
-.col {
-    align-items: center;
-    align-content: center;
-}
-
-.col-logo {
-    display: block;
-    justify-content: right;
-    text-align: end;
-    margin-right: 1rem;
-}
-
-.footer-logo {
-    max-height: 150px;
-}
-
-.col-contact {
-    padding-top: 2rem;
-}
-
 .footer-icon {
-    margin-right: 1rem;
+    padding: 0rem 1rem;
+    transition: all .5s;
 
     color: var(--light-grey);
 }
 
 .footer-icon:hover {
-    box-shadow: 0px 0px 20px var(--light-grey);
+    transform: scale(1.2);
+
+    filter: drop-shadow(0px 0px 10px var(--light-grey));
 }
 
 @media only screen and (max-width: 640px) {

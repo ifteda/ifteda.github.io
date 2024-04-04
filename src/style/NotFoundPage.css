@@ -13,10 +13,13 @@
 
 .not-found a {
     color: var(--light-grey);
+
+    transition: all .5s;
 }
 
 .not-found a:hover {
     color: var(--white);
+    text-shadow: 0px 0px 10px var(--light-grey);
 }
 
 .not-found-logo {
