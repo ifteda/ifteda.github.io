@@ -8,7 +8,7 @@ import '../style/NavBar.css';
 const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" variant="dark">
-            <Navbar.Brand href="https://ifteda.com/">
+            <Navbar.Brand href="https://ifteda.com">
                 <img className="nav-wordmark" src={wordmark} alt="ifteda" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -16,8 +16,7 @@ const NavBar = () => {
                 <Nav className="justify-content-end" style={{ width: "100%" }}>
                     <NavLink className="main-nav" to="/education">Education</NavLink>
                     <NavLink className="main-nav" to="/experience">Experience</NavLink>
-                    <NavLink className="main-nav" to="/projects">Projects</NavLink>
-                    <NavLink className="main-nav" to="/skills">Skills</NavLink>
+                    <NavLink className="main-nav" to="https://buildforblacklives.com">Build for Black Lives</NavLink>
                     <NavLink className="main-nav" to="/more">More</NavLink>
                 </Nav>
             </Navbar.Collapse>
