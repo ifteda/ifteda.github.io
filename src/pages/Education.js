@@ -57,10 +57,7 @@ const Education = ({ embedded = false }) => {
                                 centered
                                 scrollable
                             >
-                                <Modal.Header closeButton closeVariant="white"
-                                style={{
-                                    backgroundImage: `url(${itemInfo.imgURL})`
-                                }}>
+                                <Modal.Header closeButton closeVariant="white">
                                     <Modal.Title id="contained-modal-title-vcenter">
                                         <h1>{itemInfo.heading}</h1>
                                         <h3>{itemInfo.subheading}</h3>
