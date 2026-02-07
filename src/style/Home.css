@@ -33,8 +33,9 @@ section {
 }
 
 .greeting {
-    display: block;
+    display: inline-block;
     animation: scroll_greetings 8s linear infinite;
+    padding-left: 100%;
     white-space: nowrap;
 
     font-family: Cormorant Infant;
@@ -83,10 +84,6 @@ section {
 }
 
 @keyframes scroll_greetings {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+    0% { transform: translateX(2%); }
+    100% { transform: translateX(-102%); }
 }
