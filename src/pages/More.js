@@ -39,11 +39,7 @@ const More = ({ embedded = false }) => {
         </Container>
     );
 
-    return (
-        <section id="more" aria-label="More">
-            <ContentPage>{renderContent()}</ContentPage>
-        </section>
-    );
+    return (<ContentPage>{renderContent()}</ContentPage>);
 };
 
 export default More;

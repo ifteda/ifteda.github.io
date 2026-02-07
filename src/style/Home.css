@@ -5,7 +5,7 @@ html, body {
 }
 
 section {
-    padding: 2%;
+    padding: 4% 0 0 0;
 }
 
 .home {
@@ -28,24 +28,46 @@ section {
 .greeting-container {
     position: absolute;
     top: 50%;
-    height: 18vw;
+    width: 50vw;
     overflow: hidden;
-
-    padding: 0px 20px;
 }
 
 .greeting {
     display: block;
-    animation: spin_words 5s infinite;
-    margin: 2px 2px;
+    animation: scroll_greetings 8s linear infinite;
+    white-space: nowrap;
 
     font-family: Cormorant Infant;
     font-style: normal;
     font-weight: 600;
-    font-size: 12vw;
+    font-size: 4vh;
 
     color: var(--white);
     text-shadow: 0px 0px 8px var(--white);
+}
+
+.section-header {
+    padding: 2% 0;
+    justify-content: center;
+    
+    font-family: Cormorant Infant;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+
+    color: var(--white);
+    text-shadow: 0px 0px 2px var(--white);
+}
+
+.section-divider {
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    height: 2px;
+    justify-self: center;
+    opacity: 0.1;
+    margin: 4% 0 0 0;
+    width: 50%;
 }
 
 @media only screen and (max-width: 992px) {
@@ -60,20 +82,11 @@ section {
     }
 }
 
-@keyframes spin_words {
-    20% {
-        transform: translateY(-100%);
-    }
-    40% {
-        transform: translateY(-200%);
-    }
-    60% {
-        transform: translateY(-300%);
-    }
-    80% {
-        transform: translateY(-400%);
+@keyframes scroll_greetings {
+    0% {
+        transform: translateX(100%);
     }
     100% {
-        transform: translateY(400%);
+        transform: translateX(-100%);
     }
 }

@@ -78,11 +78,7 @@ const Experience = ({ embedded = false }) => {
         </>
     );
 
-    return (
-        <section id="experience" aria-label="Experience">
-            <ContentPage>{renderContent()}</ContentPage>
-        </section>
-    );
+    return (<ContentPage>{renderContent()}</ContentPage>);
 };
 
 export default Experience;

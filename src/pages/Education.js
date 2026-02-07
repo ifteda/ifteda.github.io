@@ -78,11 +78,7 @@ const Education = ({ embedded = false }) => {
         </>
     );
 
-    return (
-        <section id="education" aria-label="Education">
-            <ContentPage>{renderContent()}</ContentPage>
-        </section>
-    );
+    return (<ContentPage>{renderContent()}</ContentPage>);
 };
 
 export default Education;
