@@ -1,26 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel, Container, Image, Modal, Row, Spinner } from 'react-bootstrap';
-import { ContentPage } from './ContentPage';
+import { ContentPage } from '../components/ContentPage';
 import base from '../api/base';
 
-const Education = () => {
+const Education = ({ embedded = false }) => {
 
-    const [pageTitle, setPageTitle] = useState();
     const [loading, setLoading] = useState(true);
     const [items, setItems] = useState([])
     const [modalShow, setModalShow] = useState(false);
     const [itemInfo, setItemInfo] = useState({});
 
     const handleClick = (itemInfo) => {
-        setPageTitle(itemInfo.pageTitle);
         setModalShow(true);
         setItemInfo(itemInfo);
     };
-
-    useEffect(() => {
-        if (!modalShow) { setPageTitle("Education") };
-        document.title = pageTitle;
-    }, [modalShow, pageTitle])
 
     useEffect(() => {
         base("education")
@@ -31,13 +24,13 @@ const Education = () => {
                 fetchNextPage();
             })
     }, [])
-
-    return (
-        <ContentPage>
+    
+    const renderContent = () => (
+        <>
             {loading ? (
                 <Container fluid>
                 <Row className="spinner-row">
-                    <Spinner animation="border" role="status">
+                   <Spinner animation="border" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </Spinner>
                 </Row>
@@ -82,7 +75,13 @@ const Education = () => {
                     ))}
                 </Carousel>
             )}
-        </ContentPage>
+        </>
+    );
+
+    return (
+        <section id="education" aria-label="Education">
+            <ContentPage>{renderContent()}</ContentPage>
+        </section>
     );
 };
 

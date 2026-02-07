@@ -4,7 +4,6 @@ import logo from '../assets/logo.svg';
 import '../style/NotFoundPage.css';
 
 const NotFoundPage = () => {
-    document.title = "Page Not Found";
 
     return (
         <Container fluid className="not-found">

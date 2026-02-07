@@ -1,26 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel, Container, Image, Modal, Row, Spinner } from 'react-bootstrap';
-import { ContentPage } from './ContentPage';
+import { ContentPage } from '../components/ContentPage';
 import base from '../api/base';
 
-const Experience = () => {
+const Experience = ({ embedded = false }) => {
 
-    const [pageTitle, setPageTitle] = useState();
     const [loading, setLoading] = useState(true);
     const [items, setItems] = useState([])
     const [modalShow, setModalShow] = useState(false);
     const [itemInfo, setItemInfo] = useState({});
 
     const handleClick = (itemInfo) => {
-        setPageTitle(itemInfo.pageTitle);
         setModalShow(true);
         setItemInfo(itemInfo);
     };
-
-    useEffect(() => {
-        if (!modalShow) { setPageTitle("Experience") };
-        document.title = pageTitle;
-    }, [modalShow, pageTitle])
 
     useEffect(() => {
         base("experience")
@@ -32,8 +25,8 @@ const Experience = () => {
             })
     }, [])
 
-    return (
-        <ContentPage>
+    const renderContent = () => (
+        <>
             {loading ? (
                 <Container fluid>
                 <Row className="spinner-row">
@@ -82,7 +75,13 @@ const Experience = () => {
                     ))}
                 </Carousel>
             )}
-        </ContentPage>
+        </>
+    );
+
+    return (
+        <section id="experience" aria-label="Experience">
+            <ContentPage>{renderContent()}</ContentPage>
+        </section>
     );
 };
 

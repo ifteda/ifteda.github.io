@@ -4,17 +4,18 @@ html, body {
     overflow-x: auto;
 }
 
+section {
+    padding: 2%;
+}
+
 .home {
     text-align: center;
-    height: 100vh;
-    width: 100vw;
-
-    background: linear-gradient(180deg, var(--dark-grey) 0%, var(--black) 90%);
+    background: linear-gradient(0deg, var(--dark-grey) 0%, var(--black) 99%);
 }
 
 .logo {
-    padding: 2% 0;
-    max-height: 80vh;
+    padding: 10% 0;
+    max-height: 100vh;
     max-width: 80vw;
 }
 
@@ -47,9 +48,15 @@ html, body {
     text-shadow: 0px 0px 8px var(--white);
 }
 
-@media only screen and (max-height: 800px) {
-    img {
-        max-height: 800px;
+@media only screen and (max-width: 992px) {
+    .logo {
+        padding: 20% 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .logo {
+        padding: 30% 0;
     }
 }
 
