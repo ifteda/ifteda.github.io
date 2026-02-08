@@ -10,7 +10,7 @@ section {
 
 .home {
     text-align: center;
-    background: linear-gradient(0deg, var(--dark-grey) 0%, var(--black) 99%);
+    background: linear-gradient(0deg, var(--dark-grey), var(--black) 20%);
 }
 
 .logo {
