@@ -300,6 +300,3 @@ $RECYCLE.BIN/
 
 # production
 /build
-
-# sensitive
-src/api
