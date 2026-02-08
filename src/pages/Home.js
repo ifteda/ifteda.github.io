@@ -47,7 +47,6 @@ const Home = () => {
                     <Row><Education/></Row>
                     <hr className="section-divider"/>
                 </section>
-                
                 <section id="experience" aria-label="Experience">
                     <Row className="section-header">Experience</Row>
                     <Row><Experience/></Row>
