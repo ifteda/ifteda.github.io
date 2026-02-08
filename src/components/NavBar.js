@@ -1,7 +1,6 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import wordmark from '../assets/wordmark.svg';
 import '../style/NavBar.css';
@@ -20,9 +19,6 @@ const NavBar = () => {
                     <a className="main-nav" href="#experience">Experience</a>
                     <a className="main-nav" href="#more">More</a>
                     <a className="main-nav" href="https://buildforblacklives.com" target="_blank" rel="noopener noreferrer">Build for Black Lives</a>
-                    {/* <a className="main-nav" href="mailto:contact@ifteda.com" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faEnvelope}/>
-                    </a> */}
                     <a className="main-nav" href="https://www.linkedin.com/in/ifteda/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </a>

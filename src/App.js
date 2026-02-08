@@ -1,5 +1,4 @@
 import React from 'react';
-import { Alert } from 'react-bootstrap';
 import Home from './pages/Home';
 import useGATracker from './useGATracker';
 import './App.css';
