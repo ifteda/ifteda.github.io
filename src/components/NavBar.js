@@ -15,8 +15,8 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="justify-content-end" style={{ width: "100%" }}>
-                    <a className="main-nav" href="#education">Education</a>
                     <a className="main-nav" href="#experience">Experience</a>
+                    <a className="main-nav" href="#education">Education</a>
                     <a className="main-nav" href="#more">More</a>
                     <a className="main-nav" href="https://buildforblacklives.com" target="_blank" rel="noopener noreferrer">Build for Black Lives</a>
                     <a className="main-nav" href="https://www.linkedin.com/in/ifteda/" target="_blank" rel="noopener noreferrer">

@@ -42,14 +42,14 @@ const Home = () => {
             <Image fluid className="logo" src={logo}/>
             
             <Container fluid>
-                <section id="education" aria-label="Education">
-                    <Row className="section-header">Education</Row>
-                    <Row><Education/></Row>
-                    <hr className="section-divider"/>
-                </section>
                 <section id="experience" aria-label="Experience">
                     <Row className="section-header">Experience</Row>
                     <Row><Experience/></Row>
+                    <hr className="section-divider"/>
+                </section>
+                <section id="education" aria-label="Education">
+                    <Row className="section-header">Education</Row>
+                    <Row><Education/></Row>
                     <hr className="section-divider"/>
                 </section>
                 <section id="more" aria-label="More">
